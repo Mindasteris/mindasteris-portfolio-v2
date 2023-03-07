@@ -1,0 +1,6 @@
+react-icons,
+formik,
+yup,
+framer-motion,
+react-typed,
+yet-another-react-lightbox

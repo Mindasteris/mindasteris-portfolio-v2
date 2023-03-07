@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #0d0f21;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  @apply font-bold text-2xl md:text-3xl lg:text-5xl;
+}
+
+.nav-links li:hover {
+  @apply text-yellow-500 transition duration-300;
+}
+
+figure {
+  @apply h-[300px];
+}
+
+.projects img {
+  @apply w-80 md:w-[400px] h-[200px];
+}
+
+.projects  figcaption {
+  @apply border-t-2 border-b-2 border-red-500;
+}
+
+.github:hover {
+  @apply text-black transition duration-300 bg-white rounded-lg py-2 px-6;
+}
+
+.form {
+  @apply max-w-[500px] mx-auto;
+}
+
+.form label {
+  @apply flex justify-center py-2 items-center gap-2 text-lg;
+}
+
+.form input {
+  @apply w-full max-w-[300px] p-2 text-black rounded-md hover:outline-none;
+}
+
+.form textarea {
+  @apply w-full max-w-[300px] p-2 text-black rounded-md hover:outline-none;
+}
+
+.form button {
+  @apply w-full max-w-[300px] bg-red-600 py-2 my-4 rounded-md hover:bg-red-500;
+}
+
+.error {
+  @apply pt-2 text-lg font-medium;
+}
